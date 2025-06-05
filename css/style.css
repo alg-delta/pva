@@ -1,0 +1,891 @@
+/* Загальні стилі */
+* {
+  box-sizing: border-box; /* в ширину width та висоту height елемента враховуються рамки border та відступи padding */
+}
+
+.curt {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 50px;
+  background-color: rgb(149, 147, 147);
+  border-radius: 1%;
+  transition: all 0.5s;
+}
+.active-link {
+  color: red;
+  transition: 0.5s;
+}
+.active-link:hover {
+  color: green;
+}
+.lol {
+  font-weight: bold;
+  font-size: 50px;
+  margin-right: 45px;
+  margin-top: 50px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.app {
+  font-family: Verdana, Geneva, sans-serif;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Хедер */
+.fixed-menu {
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-menu {
+  font-weight: bold;
+  color: #3366ff;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  text-align: center;
+  background-color: rgb(64, 60, 60);
+  margin-top: 50px;
+  padding-right: 20px;
+  border: 10px solid black;
+  border-radius: 30%;
+  transition: all 0.5s;
+}
+
+.header-menu:hover {
+  transform: scale(1.15);
+}
+.header-menu-li {
+  margin-left: 22px;
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 53px;
+  transition: 0.5s;
+}
+
+.header-menu-li:hover {
+  color: #ffff00;
+  transform: scale(1.15);
+}
+
+.header-menu-li:hover:after {
+  content: "";
+  width: 40px;
+  position: absolute;
+  top: 30px;
+  left: 2px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.logo-letter-H {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #3366ff;
+  text-align: center;
+  width: 15px;
+  position: relative;
+  margin-right: 50px;
+}
+
+.abri {
+  width: 50px;
+  transition: all 0.5s;
+}
+.abri:hover {
+  transform: rotate(1turn);
+}
+
+/* .logo-letter-H::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  border: 30px solid transparent;
+  border-top: 15px solid #3366ff;
+}
+
+.logo-letter-H::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -45px;
+  border: 30px solid transparent;
+  border-bottom: 15px solid #3366ff;
+} */
+
+.logo-text {
+  color: rgb(70, 66, 66);
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.logo-text .highlight {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #1e40a9;
+}
+
+.light {
+  color: rgb(249, 176, 39);
+  font-weight: bold;
+}
+
+.hig {
+  color: rgb(109, 103, 103);
+  letter-spacing: 10px;
+  margin-right: 50px;
+}
+
+.high {
+  color: rgb(26, 26, 133);
+  letter-spacing: 10px;
+  margin-right: 50px;
+}
+
+.lighthights {
+  color: rgb(249, 175, 38);
+  letter-spacing: 10px;
+  margin-right: 50px;
+}
+
+.banner-header {
+  color: darkred;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 200px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.posl {
+  display: flex;
+}
+.banner-subheader {
+  font-size: 75px;
+  font-weight: bold;
+  margin: 40px 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.banner-description {
+  color: black;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 140px;
+  text-decoration: underline red;
+}
+
+.banner {
+  background-image: linear-gradient(
+      rgba(245, 240, 240, 0.277),
+      rgba(240, 232, 232, 0.21)
+    ),
+    url("../img/Sections background/abrykosa-czvite.jpg");
+  background-size: cover;
+}
+
+.banner .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-btn-explore1 {
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  padding: 22px;
+  background-color: red;
+  font-size: 13px;
+  font-weight: bolder;
+  border: none;
+  border-top: 3px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 70px;
+  margin-right: 30px;
+  transition: all 0.5;
+}
+.banner-btn-explore2 {
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  padding: 22px;
+  background-color: yellow;
+  font-size: 13px;
+  font-weight: bolder;
+  border: none;
+  border-top: 3px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 70px;
+  margin-right: 30px;
+  transition: all 0.5;
+}
+.banner-btn-explore3 {
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  padding: 22px;
+  background-color: greenyellow;
+  font-size: 13px;
+  font-weight: bolder;
+  border: none;
+  border-top: 3px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 70px;
+  margin-right: 30px;
+  transition: all 0.5;
+}
+.banner-btn-explore4 {
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  padding: 22px;
+  background-color: blue;
+  font-size: 13px;
+  font-weight: bolder;
+  border: none;
+  border-top: 3px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 70px;
+  margin-right: 30px;
+  transition: all 0.5;
+}
+
+.banner-btn-explore1:hover {
+  background-color: rgb(243, 13, 208);
+  transform: scale(1.1);
+}
+.banner-btn-explore2:hover {
+  background-color: rgb(243, 13, 208);
+  transform: scale(1.1);
+}
+.banner-btn-explore3:hover {
+  background-color: rgb(243, 13, 208);
+  transform: scale(1.1);
+}
+.banner-btn-explore4:hover {
+  background-color: rgb(243, 13, 208);
+  transform: scale(1.1);
+}
+/* Заголовки секцій */
+.services-header {
+  color: green;
+  font-family: Verdana, sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  position: relative;
+  /* margin-left: 250px; */
+}
+
+/* Напрямки Таби */
+
+.tabs-section {
+  background-color: #f8fcfe;
+  padding-bottom: 100px;
+}
+
+.tabs-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  transition: 0.5s;
+}
+.tabs:hover {
+  transform: scale(1.1);
+}
+
+.tab {
+  border: 1px solid #ebebeb;
+  background-color: white;
+  padding: 20px;
+  color: #717171;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tabs-active {
+  border-top: 2px solid green;
+  color: green;
+}
+
+.tabs-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.card {
+  width: 284px;
+  height: 206px;
+  z-index: 2;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* обрізає зображення, зберігаючи пропорції, щоб воно заповнило .card */
+}
+
+/*Замовити тур*/
+
+.purchase-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)),
+    url("../img/Sections background/section-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  /* padding-left: 600px; */
+  /* padding-right: 600px; */
+  display: flex;
+}
+
+.purchase-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.purchase-section-header {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 34px;
+  color: #3366ff;
+  font-weight: bold;
+  margin: 125px 0 30px;
+}
+
+.purchase-section-description {
+  color: #d8d8d8;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 17px;
+  margin-bottom: 100px;
+  font-style: italic;
+  text-decoration: underline solid white 1px;
+}
+
+/* Наші тури */
+
+.news-section .wrapper {
+  display: flex;
+  justify-content: center;
+  /* margin-left: 250px; */
+}
+
+.news-cards-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 980px;
+}
+
+.card-img-block {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 46px;
+  max-width: 210px;
+  border: solid black 1px;
+  transition: all 0.5s;
+}
+
+.card-img-block:hover {
+  transform: scale(1.1);
+}
+
+.card-img-date {
+  background-color: #203e38;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68px;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-date-day {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.card-date-month {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  padding-top: 12px;
+}
+
+.news-card-description {
+  background-color: #f8fcfe;
+  border: 1px solid #ebebeb;
+  padding: 14px;
+  margin-top: -2px;
+  text-align: center;
+}
+
+.news-card-header {
+  font-family: Verdana, Geneva, sans-serif;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 7px;
+  font-size: 12px;
+}
+
+.news-card-author::after {
+  content: "";
+  height: 16px;
+  border-left: 1px solid rgba(119, 119, 119, 0.49);
+  margin-left: 14px;
+}
+
+.card-img-block:hover .card-img-date {
+  background-color: #3366ff;
+}
+
+.card-img-block:hover .news-card-header {
+  color: #3366ff;
+}
+
+/* Слайдер */
+
+.testimonial-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/Sections background/section-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.testimonial-section .services-header {
+  color: white;
+}
+
+.slider-block {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+.img1 {
+  width: 400px;
+  height: 280px;
+  background-image: url("../img/testimonials/beast.jpg");
+  background-size: cover;
+}
+
+.img2 {
+  width: 400px;
+  height: 280px;
+  background-image: url("../img/testimonials/romapro.jpg");
+  background-size: cover;
+}
+
+.img3 {
+  width: 400px;
+  height: 280px;
+  background-image: url("../img/testimonials/terminator.jpg");
+  background-size: cover;
+}
+
+.img4 {
+  width: 400px;
+  height: 280px;
+  background-image: url("../img/testimonials/eminem.jpg");
+  background-size: cover;
+}
+
+.txt {
+  font-family: Verdana, Geneva, sans-serif;
+  color: purple;
+  font-size: 15px;
+  font-style: bolder;
+  background-color: gray;
+  opacity: 70%;
+  text-align: center;
+  margin: 0 10px 0 10px;
+  padding: 8px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  opacity: 40%;
+  background-color: #3366ff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+.dot:hover {
+  transform: scale(1.25);
+  background-color: purple;
+}
+
+.active {
+  opacity: 100%;
+}
+.nextBtn {
+  background-image: url("../img/round-right-button.png");
+  width: 50px;
+  height: 50px;
+  opacity: 40%;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  left: 470px;
+  transition: all 0.5s;
+}
+
+.nextBtn:hover {
+  opacity: 100%;
+  color: black;
+  transform: scale(1.15);
+}
+
+.backBtn:hover {
+  opacity: 100%;
+  color: black;
+  transform: scale(1.15);
+}
+
+.backBtn {
+  background-image: url("../img/round-left-button.png");
+  width: 50px;
+  height: 50px;
+  opacity: 40%;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  left: -20px;
+  transition: all 0.5s;
+}
+
+/* Футер */
+
+.footer-section {
+  height: 106px;
+  background-color: #22353f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #bbbbbb;
+}
+
+.footer-text span::after {
+  content: "";
+  height: 14px;
+  border-left: 2px solid rgba(119, 119, 119, 0.73);
+  margin: 4px;
+}
+
+/* Модальне вікно */
+.modal-wrapper {
+  display: none; /* flex */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  opacity: 90%;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal {
+  width: 400px;
+  background-color: white;
+  box-shadow: 10px 10px 13px 10px black;
+}
+
+.modal-header {
+  background-color: blue;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-main {
+  display: flex;
+  justify-content: center;
+}
+
+.close-modal {
+  margin: 0;
+  padding-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-btn {
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  background-color: #3366ff;
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  border-top: 3px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.modal-btn:hover {
+  background-color: #0000ff;
+}
+
+.modal-input {
+  font-family: Verdana, Geneva, sans-serif;
+  padding: 8px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+/* Адаптивні медіа запити для планшетів та мобілок */
+
+@media (max-width: 840px) {
+  .header-menu {
+    font-size: 10px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .banner-header {
+    font-size: 24px;
+  }
+
+  .banner-subheader {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+
+  .banner-description {
+    font-size: 28px;
+  }
+
+  .purchase-section-header {
+    font-size: 24px;
+  }
+  .purchase-section-description {
+    font-size: 20px;
+  }
+
+  .news-cards-blocks {
+    width: 700px;
+  }
+}
+
+@media (max-width: 630px) {
+  .header-menu {
+    font-size: 8px;
+  }
+
+  .banner-header {
+    font-size: 17px;
+  }
+
+  .banner-subheader {
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .banner-description {
+    font-size: 22px;
+  }
+
+  .purchase-section-header {
+    font-size: 17px;
+  }
+  .purchase-section-description {
+    font-size: 15px;
+  }
+
+  .news-cards-blocks {
+    width: 500px;
+  }
+}
+
+.banner-subheader:before {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    red,
+    yellow,
+    lime,
+    skyBlue,
+    purple
+  );
+  height: 4px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -15px;
+  transition: 1s;
+}
+
+.banner-subheader {
+  position: relative;
+}
+
+.banner-subheader:hover:before {
+  left: 0px;
+  right: 0px;
+}
